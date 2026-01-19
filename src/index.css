@@ -196,3 +196,92 @@
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
+
+@keyframes logoIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: blur(3px);
+  }
+  45% { 
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-logoIn {
+  animation: logoIn 1.2s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+}
+
+@keyframes lfxLogoIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: blur(3px);
+  }
+  45% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.lfx-logo-in {
+  animation: lfxLogoIn 1.2s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+}
+
+/* Fade cinematográfico */
+@keyframes lfxFadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.lfx-fadeout {
+  animation: lfxFadeOut 0.7s ease forwards;
+}
+
+/* Mini "ta-dum" visual (sin sonido) */
+@keyframes lfxTadumMini {
+  0%   { opacity: 0; transform: scale(0.96); }
+  35%  { opacity: 1; transform: scale(1.02); }
+  55%  { transform: scale(1); }
+  70%  { box-shadow: 0 0 0 rgba(0,0,0,0); }
+  100% { box-shadow: 0 0 30px hsl(357 91% 47% / 0.25); }
+}
+
+.lfx-tadum-mini {
+  animation: lfxTadumMini 520ms cubic-bezier(.2,.9,.2,1) both;
+}
+
+/* Cursor typing */
+@keyframes lfxCaretBlink {
+  0%, 45% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.lfx-caret {
+  display: inline-block;
+  width: 10px;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: -2px;
+  background: rgba(255,255,255,0.65);
+  animation: lfxCaretBlink 900ms infinite;
+}
