@@ -34,7 +34,7 @@ const HeroSection = ({ onPlay }: HeroSectionProps) => {
           className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-2 animate-fade-in-up"
           style={{ animationDelay: "0.1s" }}
         >
-          NUESTRA HISTORIA
+          P.S. I Love you
         </h1>
         
         {/* Subtitle */}
@@ -51,7 +51,7 @@ const HeroSection = ({ onPlay }: HeroSectionProps) => {
           style={{ animationDelay: "0.3s" }}
         >
           <span className="text-green-500 font-semibold">❤️ 100% Match</span>
-          <span className="text-muted-foreground">2024</span>
+          <span className="text-muted-foreground">2023</span>
           <span className="border border-muted-foreground/50 px-1 text-xs text-muted-foreground">16+</span>
           <span className="text-muted-foreground">Temporada ∞</span>
         </div>

@@ -103,12 +103,12 @@ const DetailModal = ({ isOpen, onClose, item }: DetailModalProps) => {
                   <Calendar className="w-4 h-4" />
                   2024
                 </span>
-                <span className="border border-muted-foreground/50 px-2 py-0.5 text-sm text-muted-foreground">16+</span>
+                <span className="border border-muted-foreground/50 px-2 py-0.5 text-sm text-muted-foreground">18+</span>
                 <span className="text-muted-foreground flex items-center gap-1">
                   <Clock className="w-4 h-4" />
                   {item.duration || "2h 14min"}
                 </span>
-                <span className="bg-muted text-muted-foreground text-xs px-2 py-1 rounded">HD</span>
+                <span className="bg-muted text-muted-foreground text-xs px-2 py-1 rounded">4K Dolby Vision</span>
               </div>
               
               {/* Title */}
@@ -128,7 +128,7 @@ const DetailModal = ({ isOpen, onClose, item }: DetailModalProps) => {
                 </p>
                 <div className="flex items-center gap-2 mt-2">
                   <Heart className="w-4 h-4 text-primary fill-primary" />
-                  <span className="text-primary text-sm">Mensaje especial para ti</span>
+                  <span className="text-primary text-sm">Mensaje especial para Mel</span>
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ const DetailModal = ({ isOpen, onClose, item }: DetailModalProps) => {
               </div>
               <div>
                 <span className="text-muted-foreground text-sm">Director: </span>
-                <span className="text-foreground">El Destino</span>
+                <span className="text-foreground">El Destino y Mel Gibson</span>
               </div>
               <div>
                 <span className="text-muted-foreground text-sm">Temporadas: </span>
