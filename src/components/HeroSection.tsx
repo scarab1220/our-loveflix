@@ -34,7 +34,7 @@ const HeroSection = ({ onPlay }: HeroSectionProps) => {
           className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground mb-2 animate-fade-in-up"
           style={{ animationDelay: "0.1s" }}
         >
-          P.S. I Love you
+          MxO P.S. I Love you
         </h1>
         
         {/* Subtitle */}
@@ -61,9 +61,7 @@ const HeroSection = ({ onPlay }: HeroSectionProps) => {
           className="text-sm md:text-base text-foreground/80 mb-8 max-w-xl line-clamp-3 animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >
-          Dos almas que se encontraron en el momento perfecto. Una historia de amor, 
-          risas y aventuras que comenzó con una mirada y continúa escribiéndose cada día.
-          Porque los finales felices existen... y el nuestro apenas comienza.
+          Feliz Aniversario mi amor! Esta es nuestra serie, la mas linda jamas contada, llena de momentos inolvidables, viajes magicos y episodios que llevo en mi corazon. Gracias por ser mi mi amor eterno y la protagonista de esta historia.
         </p>
         
         {/* Buttons */}

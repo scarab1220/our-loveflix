@@ -28,9 +28,9 @@ const Index = () => {
     setSelectedItem({
       id: "main",
       image: momentsContent[0].image,
-      title: "Nuestra Historia",
+      title: "Feliz Aniversario y Sorpresa 🎉",
       description:
-        "Desde el primer momento que te vi, supe que algo especial estaba comenzando. Esta es la historia de cómo dos corazones encontraron su camino hacia el amor verdadero. Cada capítulo está lleno de risas, aventuras, y momentos que atesoro con todo mi ser. Gracias por ser mi compañera en esta increíble aventura llamada vida.",
+        "Quise darte algo muy diferente esta vez y sorprenderte con algo unico. Cada capítulo de nuestra historia está lleno de risas, aventuras, tambien de lagrimas y problemas muy dificiles, pero sobre todo momentos que atesoro con todo mi ser. Gracias por ser mia, por ser lo mas bonito que he encontrado en esta vida, te amo muchisimo!",
       match: 100,
       duration: "Para siempre",
       tags: ["Romance", "Drama", "Comedia", "Para siempre"],
@@ -48,7 +48,7 @@ const Index = () => {
             image: momentsContent[0].image,
             title: "Contenido secreto 💖",
             description:
-              "Encontraste el código… y eso significa que eres mi persona favorita.\n\nGracias por estar conmigo. Te amo.",
+              "Encontraste el código… y eso significa que has ganado un premio especial.\n\nGracias por estar conmigo un aniversario mas, Te amo intensamente.",
             match: 100,
             duration: "∞",
             tags: ["Secreto", "Romance"],
@@ -67,7 +67,7 @@ const Index = () => {
       <div className="-mt-32 relative z-10">
         <section id="momentos" className="scroll-mt-24">
           <ContentRow
-            title="💕 Momentos que Amo de Ti"
+            title="💕 Cositas que Amoooo de Ti"
             items={momentsContent}
             onItemClick={handleItemClick}
           />
@@ -75,7 +75,7 @@ const Index = () => {
 
         <section id="viajes" className="scroll-mt-24">
           <ContentRow
-            title="✈️ Nuestros Viajes"
+            title="✈️ Nuestros Viajes (Necesitamos Más)!"
             items={tripsContent}
             onItemClick={handleItemClick}
           />
@@ -83,7 +83,7 @@ const Index = () => {
 
         <section id="episodios" className="scroll-mt-24">
           <ContentRow
-            title="📺 Episodios Favoritos"
+            title="📺 Episodios (Momentos) Favoritos"
             items={episodesContent}
             onItemClick={handleItemClick}
           />
@@ -105,10 +105,10 @@ const Index = () => {
       <footer className="py-12 px-4 md:px-12 mt-8">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground text-sm mb-2">
-            Hecho con ❤️ solo para ti
+            Hecho con ❤️ solo para Meli
           </p>
           <p className="text-muted-foreground/60 text-xs">
-            © 2024 OurFlix. Todos los momentos reservados para siempre.
+            © 2023 OurFlix. Todos los momentos reservados para siempre.
           </p>
         </div>
       </footer>
