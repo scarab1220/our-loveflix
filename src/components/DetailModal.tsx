@@ -124,7 +124,7 @@ const DetailModal = ({ isOpen, onClose, item }: DetailModalProps) => {
               {/* Romantic Quote */}
               <div className="bg-muted/30 border-l-4 border-primary p-4 rounded-r">
                 <p className="text-foreground/70 italic">
-                  "Cada momento contigo es un capítulo que quiero releer infinitas veces."
+                  "Contigo y con dios vamos a lograr todo lo que nos propongamos, sos mi inspiración y mi fuerza para seguir adelante."
                 </p>
                 <div className="flex items-center gap-2 mt-2">
                   <Heart className="w-4 h-4 text-primary fill-primary" />
