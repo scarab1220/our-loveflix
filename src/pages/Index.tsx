@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ContentRow from "@/components/ContentRow";
 import DetailModal from "@/components/DetailModal";
+import EasterEggModal from "@/components/EasterEggModal";
 import {
   momentsContent,
   tripsContent,
@@ -14,6 +15,9 @@ const Index = () => {
   const [selectedItem, setSelectedItem] = useState<ContentItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  // ✅ Easter egg state
+  const [isEasterEggOpen, setIsEasterEggOpen] = useState(false);
+
   const handleItemClick = (item: ContentItem) => {
     setSelectedItem(item);
     setIsModalOpen(true);
@@ -22,6 +26,15 @@ const Index = () => {
   const handleCloseModal = () => {
     setIsModalOpen(false);
     setTimeout(() => setSelectedItem(null), 300);
+  };
+
+  // ✅ Abre Easter Egg (para "Más información")
+  const handleOpenEasterEgg = () => {
+    setIsEasterEggOpen(true);
+  };
+
+  const handleCloseEasterEgg = () => {
+    setIsEasterEggOpen(false);
   };
 
   const handlePlayHero = () => {
@@ -60,7 +73,8 @@ const Index = () => {
 
       {/* HERO */}
       <section id="inicio" className="scroll-mt-24">
-        <HeroSection onPlay={handlePlayHero} />
+        {/* ✅ Aquí estaba el error: debe abrir el EasterEgg, no cerrarlo */}
+        <HeroSection onPlay={handlePlayHero} onMoreInfo={handleOpenEasterEgg} />
       </section>
 
       {/* FILAS */}
@@ -118,6 +132,14 @@ const Index = () => {
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         item={selectedItem}
+      />
+
+      {/* ✅ EASTER EGG MODAL */}
+      <EasterEggModal
+        open={isEasterEggOpen}
+        onClose={handleCloseEasterEgg}
+        title="Para siempre"
+        message="Si llegaste hasta aquí… es porque eres tú y solamente tu.\n\nGracias por existir en mi vida. Eres mi lugar seguro, mi sonrisa y ojitos favoritos, y la historia de mi vida.\n\nTe elijo hoy, mañana y siempre. ❤️"
       />
     </div>
   );

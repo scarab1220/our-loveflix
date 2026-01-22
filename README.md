@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+# ❤️ Our-Loveflix
 
-## Project info
+A Netflix-style romantic web app built as a personal love story.  
+This project recreates the Netflix browsing experience with a cinematic UI, smooth animations, hidden easter eggs, and heartfelt moments — all crafted as a surprise gift. 🎬💖
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## ✨ Overview
 
-There are several ways of editing your application.
+**Our-Loveflix** is a Netflix-inspired frontend project designed to tell a love story through code.  
+It combines modern UI/UX patterns with emotional storytelling, turning shared memories into “episodes,” “moments,” and “seasons.”
 
-**Use Lovable**
+This project is **not intended for commercial use**.  
+It is a personal, creative, and romantic experiment.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎥 Features
 
-**Use your preferred IDE**
+- 🎬 **Netflix-style Hero Section**  
+  Cinematic background, gradients, and call-to-action buttons.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 📺 **Hover-Expanding Content Cards**  
+  Smooth scale, overlay, and action buttons inspired by Netflix.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- 🧭 **Sticky Navbar with Smooth Scroll**  
+  Seamless navigation between sections.
 
-Follow these steps:
+- 🔍 **Secret Search Easter Egg**  
+  Enter a hidden keyword (or type `LOVE`) to unlock special content.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- 🎁 **Hidden Romantic Easter Eggs**  
+  Surprise modals with letter-by-letter animated messages.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- 💖 **Personalized Content**  
+  Moments, trips, and episodes are fully customizable.
 
-# Step 3: Install the necessary dependencies.
-npm i
+- 🎨 **Custom Netflix-Inspired Theme**  
+  Dark UI, red accents, cinematic gradients, and animations.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🛠️ Tech Stack
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vite**
+- **Lucide Icons**
+- **Sonner (Toasts)**
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Project Structure
 
-## What technologies are used for this project?
+```text
+src/
+ ├─ components/
+ │  ├─ Navbar.tsx
+ │  ├─ HeroSection.tsx
+ │  ├─ ContentRow.tsx
+ │  ├─ ContentCard.tsx
+ │  ├─ DetailModal.tsx
+ │  ├─ EasterEggModal.tsx
+ │  └─ LoveflixIntro.tsx
+ ├─ data/
+ │  └─ content.ts
+ ├─ pages/
+ │  └─ Index.tsx
+ ├─ assets/
+ │  └─ hero-bg.jpg
+ └─ index.css
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+public/
+ ├─ images/
+ └─ intro/

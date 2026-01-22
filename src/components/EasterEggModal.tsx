@@ -17,7 +17,7 @@ export default function EasterEggModal({
   const fullText = useMemo(
     () =>
       message ??
-      "Si llegaste hasta aquí… es porque eres tú y solamente tu.\n\nGracias por existir en mi vida. Eres mi lugar seguro, mi sonrisa y ojitos favoritos, y la historia de mi vida.\n\nTe elijo hoy, mañana y siempre. ❤️",
+      "Si llegaste hasta aquí… es porque eres tú y solamente tu. Gracias por existir en mi vida. Eres mi lugar seguro, mi sonrisa y ojitos favoritos, y la historia de mi vida. Te elijo hoy, mañana y siempre. ❤️",
     [message]
   );
 
